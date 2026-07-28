@@ -6,5 +6,5 @@ void change(int* ptr){
 int main(){
     int x = 10;
     change(&x);
-    cout<<x<<endl;
+    cout<<x<<endl; //20
 }

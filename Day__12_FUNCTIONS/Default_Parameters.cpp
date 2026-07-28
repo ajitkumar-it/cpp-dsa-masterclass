@@ -5,4 +5,5 @@ void fun(int age = 20){
 }
 int main(){
     fun();
+    fun(47);
 }

@@ -5,5 +5,5 @@ int main(){
     {
         int x = 8;
     }
-    cout<<x;
+    cout<<x;//6
 }

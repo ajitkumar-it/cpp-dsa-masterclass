@@ -6,7 +6,7 @@ void change(){
 }
 int main(){
     int x = 80;
-    cout<<x<<endl;
+    cout<<x<<endl; // 80
     change();
-    cout<<x<<endl;
+    cout<<x<<endl; // 80
 }

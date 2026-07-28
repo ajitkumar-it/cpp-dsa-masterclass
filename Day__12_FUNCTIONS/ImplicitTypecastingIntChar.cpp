@@ -4,5 +4,5 @@ void fun(char x){
     cout<<x<<endl;
 }
 int main(){
-    fun(122); 
+    fun(122); //z
 }

@@ -7,5 +7,6 @@ void fun(int n){
   cout << n * n << endl;
 }
 int main(){
-  fun(17);
+  fun(17);//17*17
+  fun(21);//21
 }

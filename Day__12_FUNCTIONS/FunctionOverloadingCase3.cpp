@@ -14,4 +14,5 @@ void fun(char y, int x){
 }
 int main(){
     // fun(34,97); ERROR
+    fun(54, 'a');
 }

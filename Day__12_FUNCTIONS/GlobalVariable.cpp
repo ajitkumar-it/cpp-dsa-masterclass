@@ -5,7 +5,8 @@ void fun(){
     x = 23;
 }
 int main(){
-    cout<<x<<endl;
+    cout<<x<<endl; // 7
     fun();
-    cout<<x<<endl;
+    cout<<x<<endl; // 23
+
 }
