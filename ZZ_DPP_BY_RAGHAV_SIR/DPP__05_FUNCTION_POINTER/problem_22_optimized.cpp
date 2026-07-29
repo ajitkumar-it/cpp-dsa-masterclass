@@ -8,15 +8,12 @@ Q22. Write a function sumFirstAndLast(int n) that extracts the first and the las
 #include<iostream>
 using namespace std;
 int sumFirstAndLast(int n){
-     int rev = 0, temp = n;
-     while(temp!=0){
-          int ld = temp % 10;
-          rev *= 10;
-          rev += ld;
-          temp = temp / 10;
-     }
-     int first = rev % 10, last = n % 10;
-     return first + last;
+  int last = n % 10;
+  int first = n;
+  while(first>=10){
+    first /= 10;
+  }
+  return first + last;
 }
 int main(){
      int n;

@@ -3,5 +3,5 @@
 using namespace std ;
 int main(){
   int x = 36 , y = 15;
-  cout << max (( int ) sqrt (x) , y );
+  cout << max ((int)sqrt(x) , y ); // 15
 }

@@ -6,5 +6,5 @@ void modify (int x){
 int main(){
   int a = 5;
   modify (a );
-  cout << a ;
+  cout << a ; // 5
 }
