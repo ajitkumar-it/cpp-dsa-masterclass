@@ -12,3 +12,24 @@ Q29. Minimum Absolute Difference. Find the minimum absolute difference between
 
 
 */
+
+#include<iostream>
+#include<vector>
+#include<algorithm>
+using namespace std;
+int main(){
+      int n;
+      cout << "Enter size of the array: ";
+      cin >> n;
+      vector<int> arr(n);
+      cout << "Enter element in the array: ";
+      for (int i = 0; i < n;i++){
+            cin >> arr[i];
+      }
+      int min = 300;
+      for (int i = 0; i < n-1;i++){
+            if(abs(arr[i]-arr[i+1]) < min)
+                  min = abs(arr[i] - arr[i + 1]);
+      }
+      cout << "MINIMUM = " << min;
+}

@@ -10,3 +10,35 @@ Q23. First Repeated Element. Given an array of size N,
                5 is the first element we encounter that will be repeated later.
 
 */
+
+#include<iostream>
+#include<vector>
+using namespace std;
+int main(){
+  int n;
+  cout << "Enter size of the array: ";
+  cin >> n;
+  vector<int> arr(n);
+  cout << "Elements of the array: ";
+  for (int i = 0; i < n;i++){
+    cin>>arr[i];
+  }
+  cout << endl;
+  int i;
+  bool found = false;
+  for ( i = 0; i < n;i++){
+    for (int j = i + 1; j < n;j++){
+      if(arr[i] == arr[j]){
+        found = true;
+        break;
+      }
+    }
+    if(found)
+      break;
+  }
+  if(found)
+    cout << " ans = " << arr[i];
+
+  else
+    cout << "-1";
+}
